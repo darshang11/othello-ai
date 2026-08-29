@@ -1,0 +1,12 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.DS_Store
+
+# Project-specific
+logs/
+__MACOSX/
