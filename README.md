@@ -1,2 +1,2 @@
 # othello-ai
-Competitive Othello (Reversi) AI using alpha-beta pruning, Zobrist hashing, and iterative deepening. Playable as Player vs Player, Player vs Agent, or Agent vs Agent.
+A Python implementation of Othello (Reversi) with a Pygame-based GUI supporting four game modes: Player vs Player, Player vs Agent, Agent vs Player, and Agent vs Agent. The AI agent searches with alpha-beta pruned minimax and iterative deepening under a 5-second time limit, using hashing and a transposition table to cache and reuse previously-searched positions. Move ordering prioritizes corners and avoids X/C squares. The evaluation function blends position, mobility, and corner control, shifting weights toward total disc count in the endgame.
