@@ -3,9 +3,9 @@ Python implementation of Othello (Reversi) with a Pygame-based GUI supporting fo
 
 # Setup
 
-Requires Python 3 and Pygame:
+Requires Python 3.10 or newer:
 ```bash
-pip install pygame
+pip install pygame-ce
 ```
 
 # Usage
