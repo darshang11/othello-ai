@@ -163,15 +163,10 @@ def main():
 
 def writeLogToOS(log):
 
-    if not os.path.exists("logs"):
-        os.makedirs("logs")
-
-    if(platform == "win32"):
-        with open(f"logs\\{datetime.now()}.log", "w") as logFile:
-            logFile.write(str(log))
-    else:
-        with open(f"logs/{datetime.now()}.log", "w") as logFile:
-            logFile.write(str(log))
+    os.makedirs("logs", exist_ok=True)
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    with open(os.path.join("logs", f"{timestamp}.log"), "w") as logFile:
+        logFile.write(str(log))
 
 
 def playerSelect():
